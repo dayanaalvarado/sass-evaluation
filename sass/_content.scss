@@ -1,0 +1,140 @@
+
+
+
+.ronda-o {
+    margin-bottom: 20px;
+    margin-left: -6px;
+    position: relative;
+    float: left;
+}
+.ronda-t {
+    @extend .ronda-o;
+    width: 180px;
+    margin: 0 10px;
+}
+.pop {
+    padding: 5px 25px 1px 25px;
+    position: absolute;
+    float: left;
+    line-height: 1.6;
+    background: $red;
+    a {
+        color: $white;
+    }
+} 
+.border div:nth-child(odd) {
+    h5 {
+        text-transform: $transformacion; 
+    }
+}
+.fotonews {
+    display: block;
+    margin-top: 10%;
+    width: 100%;
+}
+h6 {
+    color: $red;
+}
+
+
+@mixin titulos{
+margin-top:3%;
+    color:$gray;
+    font-size: 19px;
+    font-weight: 700;
+    border-bottom:1px solid #EA4748;
+    text-transform: $transformacion;
+    span{
+
+        border-bottom: 6px solid #EA4748;
+    }
+}
+
+
+@mixin titulosh4{
+    color:$gray;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom:1px solid #EA4748;
+    text-transform: $transformacion;
+    span{
+        border-bottom: 6px solid #EA4748;
+    }
+    .margen{
+        margin-top:30px;
+    }
+}
+
+.seccion-dos{
+
+   .rojo{
+        color:$red;
+    }
+
+
+    .img-video{
+        margin-top: 18px;
+
+    }
+
+
+
+    .textos-stars{
+        div{
+            margin-top:25px;
+        }
+    
+    p{
+        color:$gray;
+        font-weight:600;
+    }
+
+    img{
+        width: 26%;
+    }
+}
+a{
+    img{
+        width: 26%;
+    }
+}
+h5{
+    @include titulos;
+}
+
+h4{
+    @include titulosh4;
+}
+
+
+.texto{
+    p:nth-child(0){
+        margin-top:3px;
+                color:$gray;
+
+    }
+}
+
+
+.todo-redes{
+
+
+    .redes{
+        float: right;
+        margin: 5px -22px 0px -22px;
+
+        p{
+          margin-left: 30%;
+          margin-top: 10%;
+      }
+
+      img{
+        width: 100px;
+        height: 74px;
+        margin-left: 45px;
+    }
+}
+}
+
+
+}

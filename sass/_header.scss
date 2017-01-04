@@ -1,0 +1,55 @@
+
+html {
+	font-family: 'Raleway', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+.ctrl {
+	width: 1060px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+.hs {
+    width: 95%;
+    margin-bottom: 20px;
+}
+.logo {
+	margin: 35px 0 20px 0;
+}
+.navbar-form {
+	float: right;
+	margin-top: 30px;
+	.form-group {
+		float: left;
+	}
+	.form-control {
+		border-radius: 0;
+		border: none;
+		box-shadow: none;
+		background: $back-gray;
+	}
+	.btn-search {
+		@extend .form-control;
+		height: 34px;
+		background: $red;
+	}	
+}
+.navbar-default {
+	background: $white; 
+	border-color: $white; 
+	border-bottom: $red-line;
+	width: 99%;
+}
+.navbar-collapse {
+	padding-left: 0;
+}
+.navbar-nav {
+	margin-right: 20px;
+}
+.nav {
+	li {
+		a {
+			padding-left: 0;
+			text-transform: $transformacion;	
+		}
+	}
+}
